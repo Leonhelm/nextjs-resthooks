@@ -1,0 +1,30 @@
+{
+  "name": "nextjs-resthooks",
+  "version": "0.0.1",
+  "description": "Make server-side nextjs rendering with resthooks",
+  "author": "Vitaliy Demkin <qwiray@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "reinstall": "rimraf .next && rimraf out && rimraf package-lock.json && rimraf node_modules && npm i && npm up"
+  },
+  "dependencies": {
+    "@rest-hooks/legacy": "^1.0.5",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.1.7",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "rest-hooks": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-typescript": "^7.8.3",
+    "@types/node": "^12.7.8",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.7.4"
+  }
+}
